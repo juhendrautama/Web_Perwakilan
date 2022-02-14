@@ -12,13 +12,17 @@
     </div>
 
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">        
-        <li><a href="Home">Home </a></li>
+      <ul class="nav navbar-nav">     
+         
+        <li><a   href="Home">Home </a></li>
+
         <li>
-            <a href="#" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">
+          <a  href="#" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">
             Profil
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <span class="caret"></span>
+          </a>
+
+          <ul class="dropdown-menu">
               <?php foreach($tampil_data_profil->result()as $rs) {?> 
                 <li> 
                   <a class="dropdown-item a" href="Profil/Selengkap_nya/<?php echo $rs->id_profil; ?>/<?php echo str_replace(' ','-',$rs->nama) ?>">
@@ -26,15 +30,21 @@
                           </a>
                 </li>        
               <?php } ?>               
-            </ul>
+          </ul>
         
         </li>
 
-        <li><a href="berita.php">Berita </a>
-        <li><a class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">Informasi
+        <li><a href="Berita">Berita </a>
+        <li><a href="#" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">Informasi
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="rooms-tariff.php">Layanan Wisma/Penginapan</a></li>          
+              <?php foreach($tampil_informasi->result()as $rs) {?> 
+              <li>
+                <a href="Profil/Selengkap_nya/<?php echo $rs->id_kegitan_program; ?>/<?php echo str_replace(' ','-',$rs->nama) ?>">
+                  <?php echo $rs->nama; ?>
+                </a>
+              </li>        
+              <?php } ?>  
             </ul>
         </li> 
 

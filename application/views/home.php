@@ -7,15 +7,6 @@
 <body id="home">
 
 
-<!-- top 
-  <form class="navbar-form navbar-left newsletter" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Enter Your Email Id Here">
-        </div>
-        <button type="submit" class="btn btn-inverse">Subscribe</button>
-    </form>
- top -->
-
 <!--MENU ATAS -->
     <?php $this->load->view('tools/menu_atas'); ?>
 <!--MENU ATAS-->
@@ -39,7 +30,7 @@
         <div class="container">
             <div class="row"><br>
                 <div class="col-md-12 text-center marb-35"><p>
-                    <h3 class="header-h">SELAMAT DATANG DI WEBSITE RESMI BADAN PENGHUBUNG</h3>
+                    <h3 class="header-h"> SELAMAT DATANG DI WEBSITE RESMI BADAN PENGHUBUNG</h3>
                     <p style="line-height: normal" class="MsoNormal">
 <strong><span style="font-size: 14pt; font-family: &quot;Times New Roman&quot;, serif">PEMERINTAH PROVINSI JAMBI</span></strong><span style="font-size: 14pt; font-family: &quot;Times New Roman&quot;, serif"><br />
 Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330&nbsp;<br />
@@ -56,7 +47,7 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 
 <!-- reservation-information -->
 <div id="information" class="spacer reserve-info ">
-<div class="container">
+
 <div class="row">
 <div class="col-sm-7 col-md-8">
 <h3>PROFIL PROVINSI JAMBI</h3>
@@ -142,7 +133,7 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 <h2>Gallery Room </h2></center>
 <!-- services -->
 <div class=" services wowload fadeInUp">
-<div class="container">
+
     <div class="row">
         <div class="col-sm-4">
             <!-- RoomCarousel -->
@@ -242,7 +233,7 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
     </div>
     </div>
     </div>
-
+<hr>
 <h2><div class="title"><hr>LINK TERKAIT</div></h2>
 <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
 
@@ -300,8 +291,11 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 
 
 
+<br>
+<br><br><br>
 
-
+<br><br><br>
+<hr>
 
 <footer class="spacer">
         <div class="container">
@@ -342,24 +336,31 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
     <!--/.footer-bottom--> 
 </footer>
 
-<div class="text-center copyright">Powered by <a href="http://thebootstrapthemes.com">COPYRIGHT © DISKOMINFO PROVINSI JAMBI 2022. ALL RIGHT RESERVED.</a></div>
-
-<a href="#home" class="toTop scroll"><i class="fa fa-angle-up"></i></a>
 
 
 
+<div class="row">
+    <div class="col-md-12">
+        
+        <div class="text-center copyright">Powered by <a href="http://thebootstrapthemes.com">COPYRIGHT © DISKOMINFO PROVINSI JAMBI 2022. ALL RIGHT RESERVED.</a></div>
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title">title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+        <a href="#home" class="toTop scroll"><i class="fa fa-angle-up"></i></a>
+
+        <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title">title</h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->    
+        </div>
+
+    </div>
 </div>
+
 
 
 

@@ -41,7 +41,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                         TAMBAH DATA KEGIATAN DAN PROGRAM
+                         TAMBAH DATA INFORMASI
                              <hr>
                             
                         </div>
@@ -51,18 +51,11 @@
                            <form method="post" action="adminpanel/Admin_kegiatan_program/Simpan_kegiatan_program" enctype="multipart/form-data">
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label>Judul </label>
                                     <input type="taxt" name="nama_kegitan" value="" class="form-control" placeholder="Judul"/>
                                 </div>
-                                 <div class="col-md-2">
-                                    <label>Ketegori </label>
-                                   <select name="kategori" class="form-control">
-                                       <option value="">Pillih</option> 
-                                       <option value="KEGIATAM">KEGIATAN</option>
-                                       <option value="PROGRAM">PROGRAM</option>
-                                   </select>
-                                </div>
+                                
                             </div>
                            
                              <hr>

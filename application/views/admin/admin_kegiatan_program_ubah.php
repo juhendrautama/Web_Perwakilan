@@ -42,7 +42,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <br>
-                         <center>UBAH DATA KEGIATAN DAN PROGRAM</center>
+                         <center>UBAH DATA INFORMASI</center>
                              <hr>
                             
                         </div>
@@ -52,23 +52,11 @@
                            <form method="post" action="adminpanel/Admin_kegiatan_program/Simpan_ubah_kegiatan_program/<?php echo $tampil_data_kegiatan_program_id->id_kegitan_program; ?>" enctype="multipart/form-data">
 
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label>Judul </label>
                                     <input type="taxt" name="nama_kegitan" value="<?php echo $tampil_data_kegiatan_program_id->nama; ?>" class="form-control" placeholder="Judul"/>
                                 </div>
-                                 <div class="col-md-2">
-                                    <label>Ketegori </label>
-                                   <select name="kategori" class="form-control">
-                                      
-                                       <?php if ($tampil_data_kegiatan_program_id->kategori=='KEGIATAM') { ?>
-                                           <option value="KEGIATAM">KEGIATAN</option>
-                                           <option value="PROGRAM">PROGRAM</option>
-                                        <?php }else if ($tampil_data_kegiatan_program_id->kategori=='PROGRAM'){ ?>
-                                        <option value="PROGRAM">PROGRAM</option>
-                                       <option value="KEGIATAM">KEGIATAN</option>
-                                      <?php } ?> 
-                                   </select>
-                                </div>
+                                 
                             </div>
                             <hr>
                             

@@ -1,5 +1,5 @@
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>MESS JAMBI | Provinsi Jambi</title>
 <base href="<?php echo base_url(); ?>" />
 
@@ -40,7 +40,7 @@
   transform: scale(1.0);
 
   background-color: rgba(0, 140, 186, 0.0);
-   box-shadow: 0 0 2px 2px rgba(0, 140, 186, 0.5);
+   box-shadow: 0 0 1px 2px rgba(0, 140, 186, 0.5);
    color:#000 ;
 
 }

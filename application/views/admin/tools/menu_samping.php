@@ -20,7 +20,7 @@
                             <a href="adminpanel/Admin_berita"><i class="fa fa-table fa-fw"></i> Berita</a>
                         </li>
                           <li>
-                            <a href="adminpanel/Admin_kegiatan_program"><i class="fa fa-table fa-fw"></i> Kegiatan dan Program</a>
+                            <a href="adminpanel/Admin_kegiatan_program"><i class="fa fa-table fa-fw"></i> Informasi</a>
                         </li>
                         
                          <li>

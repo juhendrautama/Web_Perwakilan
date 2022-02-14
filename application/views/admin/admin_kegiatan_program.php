@@ -41,7 +41,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            DATA KEGIATAN DAN PROGRAM
+                            INFORMASI
                              <hr>
                             <a   class="btn btn-info" href="adminpanel/Admin_kegiatan_program/Tambah_kegiatan_program">
                             <i class="icon-edit icon-white"></i>TAMBAH DATA
@@ -56,7 +56,6 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
-                                        <th>Kategori</th>
                                         <th>Tanggal</th>
                                         <th><center>Aksi</center></th>
                                     </tr>
@@ -66,7 +65,6 @@
                                     <tr class="odd gradeX">
                                         <td><?php echo $no ?></td>
                                         <td><?php echo $rs->nama; ?></td>
-                                        <td><?php echo $rs->kategori; ?></td>
                                         <td><?php echo $rs->tgl; ?></td>
                                         <td >
                                             <center>
