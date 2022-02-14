@@ -14,19 +14,27 @@
 
 <div class="container">
 
+       <center><h1 class="title"> Berita<hr></h1></center>
 
-<br>
-    <h1 class="title" style="text-align:center;"><?php echo $tampil_data_kegiatan_id->nama; ?></h1>
-    <div class="panel panel-default">
+       
+           <div class="row">
+            <?php $no=1; foreach($tampil_semua_berita->result()as $rs){?> 
+                <div class="col-sm-4">
+                    <hr>
+                    <h3 class="title"><a href=""><?php echo $rs->judul; ?></a></h3>
+                    <hr>
+                    <img src="img/berita/<?php echo $rs->img; ?>" alt="HTML5 Icon" width="350" height="250">
+                    <p><?php echo $rs->isi_singkat; ?></p>
+                    
+                </div> 
+            <?php } ?>   
+           </div>
+          
+        
 
-                    <div class="panel-body">
-                          <?php echo $tampil_data_kegiatan_id->keterangan; ?>
-                    </div>
-</div>
+
+ </div>
 <hr>
-
-</div>
-
 
 
 <div class="container">
