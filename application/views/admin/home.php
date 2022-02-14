@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="adminpanel/Home">TP PKK Provinsi Jambi</a>
+               <a class="navbar-brand" href="adminpanel/Home">WEBSITE RESMI BADAN PENGHUBUNG</a>
             </div>
             <!-- /.navbar-header -->
             <?php $this->load->view('admin/tools/menu_atas'); ?>
