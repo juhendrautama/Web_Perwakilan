@@ -35,12 +35,13 @@
         </li>
 
         <li><a href="Berita">Berita </a>
+          
         <li><a href="#" class="dropdown-toggle dropdown" type="button" data-toggle="dropdown">Informasi
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <?php foreach($tampil_informasi->result()as $rs) {?> 
               <li>
-                <a href="Profil/Selengkap_nya/<?php echo $rs->id_kegitan_program; ?>/<?php echo str_replace(' ','-',$rs->nama) ?>">
+                <a href="Informasi/Selengkap_nya/<?php echo $rs->id_kegitan_program; ?>/<?php echo str_replace(' ','-',$rs->nama) ?>">
                   <?php echo $rs->nama; ?>
                 </a>
               </li>        

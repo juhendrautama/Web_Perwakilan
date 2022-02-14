@@ -16,18 +16,20 @@
 
 
 <hr>
-  <h1 class="title" style="text-align:center;"><?php echo $tampil_data_profil_id->nama; ?></h1>
+  <h1 class="title" style="text-align:center;"><?php echo $tampil_data_kegiatan_id->nama; ?></h1>
 
 
     
-<div style="text-align:center;">
-    <font size="3">
-    <span style="white-space: pre">  </span> 
-        <?php echo $tampil_data_profil_id->isi; ?>
+<div class="panel panel-default">
+                    <div class="panel-heading">
 
-    </font>
+                      Kategori : <?php echo $tampil_data_kegiatan_id->kategori; ?> || Tgl : <?php echo $tampil_data_kegiatan_id->tgl; ?>
+                      <hr>
+                    </div>
+                    <div class="panel-body">
+                          <?php echo $tampil_data_kegiatan_id->keterangan; ?>
+                    </div>
 </div>
-
 <hr>
 
 </div>

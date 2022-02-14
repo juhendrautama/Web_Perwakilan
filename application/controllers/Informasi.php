@@ -2,7 +2,7 @@
 
 
 
-class Program_dan_kegiatan extends CI_Controller {
+class Informasi extends CI_Controller {
 
 	function __construct()
 
@@ -25,7 +25,7 @@ class Program_dan_kegiatan extends CI_Controller {
 		$data['tampil_kategori_program']=$this->M_crud_kegiatan_program->tampil_kategori_program();
 		
 		$data['tampil_data_kegiatan_id']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_id($id);
-		$this->load->view('program_dan_kegiatan',$data);
+		$this->load->view('informasi',$data);
 
 	}
 
