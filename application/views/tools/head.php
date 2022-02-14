@@ -1,26 +1,36 @@
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>TP PKK Provinsi Jambi</title>
-  <base href="<?php echo base_url(); ?>" />
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MESS JAMBI | Provinsi Jambi</title>
+<base href="<?php echo base_url(); ?>" />
 
-  <!-- Favicons -->
-  <link href="img/logo/logo2.png" rel="icon">
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,800|Old+Standard+TT' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,500,800' rel='stylesheet' type='text/css'>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+<!-- font awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="BizPage/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="BizPage/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="BizPage/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="BizPage/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="BizPage/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="BizPage/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="BizPage/assets/css/style.css" rel="stylesheet">
+<!-- bootstrap -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+<!-- uniform -->
+<link type="text/css" rel="stylesheet" href="assets/uniform/css/uniform.default.min.css" />
+
+<!-- animate.css -->
+<link rel="stylesheet" href="assets/wow/animate.css" />
+
+
+<!-- gallery -->
+<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+
+<!-- favicon -->
+<link rel="shortcut icon" href="images/jambi.png" type="image/x-icon">
+<link rel="icon" href="images/jambi.png" type="image/x-icon">
+
+<link rel="stylesheet" href="assets/style.css">
+
 
 <style type="text/css">
 .a:hover{
@@ -39,9 +49,3 @@
 }
 </style>
 
-
- <!-- galleri -->
-    <link href="PagesGallery/css/style.css" rel="stylesheet"/>
-    
-    <!-- CSS Lightbox -->
-    <link href="PagesGallery/css/lightbox.css" rel="stylesheet"/>
