@@ -21,7 +21,7 @@
             <?php $no=1; foreach($tampil_semua_berita->result()as $rs){?> 
                 <div class="col-sm-4">
                     <hr>
-                    <h3 class="title"><a href=""><?php echo $rs->judul; ?></a></h3>
+                    <h3 class="title"><a href="Berita/Selengkap_nya/<?php echo $rs->id_berita; ?>/<?php echo str_replace(' ','-',$rs->judul) ?>"><?php echo $rs->judul; ?></a></h3>
                     <hr>
                     <img src="img/berita/<?php echo $rs->img; ?>" alt="HTML5 Icon" width="350" height="250">
                     <p><?php echo $rs->isi_singkat; ?></p>

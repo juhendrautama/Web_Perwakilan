@@ -24,8 +24,7 @@ class Galleri extends CI_Controller {
 	{
 		$data['tampil_data_baner']=$this->M_crud_baner->tampil_data_baner();
 		$data['tampil_data_profil']=$this->M_crud_profil->tampil_data_profil();
-		$data['tampil_kategori_kegiatan']=$this->M_crud_kegiatan_program->tampil_kategori_kegiatan();
-		$data['tampil_kategori_program']=$this->M_crud_kegiatan_program->tampil_kategori_program();
+		$data['tampil_informasi']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_program();
 		$data['tampil_data_putusan']=$this->M_crud_putusan->tampil_data_putusan();
 
 
@@ -39,8 +38,7 @@ class Galleri extends CI_Controller {
 	{
 		$data['tampil_data_baner']=$this->M_crud_baner->tampil_data_baner();
 		$data['tampil_data_profil']=$this->M_crud_profil->tampil_data_profil();
-		$data['tampil_kategori_kegiatan']=$this->M_crud_kegiatan_program->tampil_kategori_kegiatan();
-		$data['tampil_kategori_program']=$this->M_crud_kegiatan_program->tampil_kategori_program();
+		$data['tampil_informasi']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_program();
 		$data['tampil_data_putusan']=$this->M_crud_putusan->tampil_data_putusan();
 
 
@@ -56,8 +54,7 @@ class Galleri extends CI_Controller {
 	{
 		$data['tampil_data_baner']=$this->M_crud_baner->tampil_data_baner();
 		$data['tampil_data_profil']=$this->M_crud_profil->tampil_data_profil();
-		$data['tampil_kategori_kegiatan']=$this->M_crud_kegiatan_program->tampil_kategori_kegiatan();
-		$data['tampil_kategori_program']=$this->M_crud_kegiatan_program->tampil_kategori_program();
+		$data['tampil_informasi']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_program();
 		$data['tampil_data_putusan']=$this->M_crud_putusan->tampil_data_putusan();
 
 
