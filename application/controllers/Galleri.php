@@ -49,6 +49,21 @@ class Galleri extends CI_Controller {
 	}
 
 
+public function Foto_depan($id)
+
+	{
+		$data['tampil_data_baner']=$this->M_crud_baner->tampil_data_baner();
+		$data['tampil_data_profil']=$this->M_crud_profil->tampil_data_profil();
+		$data['tampil_informasi']=$this->M_crud_kegiatan_program->tampil_data_kegiatan_program();
+		$data['tampil_data_putusan']=$this->M_crud_putusan->tampil_data_putusan();
+
+
+		$data['tampil_semua_foto_id_allbum']=$this->M_crud_galleri->tampil_semua_foto_id_allbum($id);
+		$data['tampil_album_id_allbum']=$this->M_crud_galleri->tampil_album_id_allbum($id);
+		$this->load->view('foto_depan',$data);
+
+	}
+
 	public function Vidio()
 
 	{

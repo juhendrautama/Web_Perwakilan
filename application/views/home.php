@@ -163,62 +163,24 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 </div>
 
 <!-- reservation-information -->
-<h2>Gallery Room </h2></center>
+<center><div id="galleri"><h2>Gallery </h2></div></center>
 <!-- services -->
-<div class=" services wowload fadeInUp">
+<div class=" services wowload fadeInUp" id="galleri">
 
     <div class="row">
-        <div class="col-sm-4">
-            <!-- RoomCarousel -->
-            <div id="RoomCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                <div class="item active"><img src="images/photos/gal/room.jpg" class="img-responsive" alt="slide"></div>                
-                <div class="item  height-full"><img src="images/photos/gal/roomv.jpg"  class="img-responsive" alt="slide"></div>
-                <div class="item  height-full"><img src="images/photos/gal/pasilitas.jpg"  class="img-responsive" alt="slide"></div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#RoomCarousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="right carousel-control" href="#RoomCarousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+<?php foreach($tampil_semua_album_3->result()as $rs){?>
+        <div class="col-sm-4">    
+                <div class="item "><img src="img/album/<?php echo $rs->foto_album; ?>" class="img-responsive" alt="slide"></div>
+
+              
+            <div class="caption"><?php echo $rs->nama_allbum; ?>
+            <a href="Galleri/Foto_depan/<?php echo $rs->id_album; ?>" class="pull-right" >
+                Lihat
+            </a>
             </div>
-            <!-- RoomCarousel-->
-            <div class="caption">Rooms<a href="rooms-tariff.php" class="pull-right"><i class="fa fa-edit"></i></a></div>
         </div>
-
-
-        <div class="col-sm-4">
-            <!-- RoomCarousel -->
-            <div id="TourCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                <div class="item active"><img src="images/photos/gal/tangga.jpg" class="img-responsive" alt="slide"></div>
-                <div class="item  height-full"><img src="images/photos/gal/santai.jpg"  class="img-responsive" alt="slide"></div>
-                <div class="item  height-full"><img src="images/photos/gal/makan.jpg"  class="img-responsive" alt="slide"></div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#TourCarousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="right carousel-control" href="#TourCarousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-            </div>
-            <!-- RoomCarousel-->
-            <div class="caption">Tour Packages<a href="gallery.php" class="pull-right"><i class="fa fa-edit"></i></a></div>
-        </div>
-
-
-        <div class="col-sm-4">
-            <!-- RoomCarousel -->
-            <div id="FoodCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                <div class="item active"><img src="images/photos/gal/Resepsionis.jpg" class="img-responsive" alt="slide"></div>
-                <div class="item  height-full"><img src="images/photos/gal/lantai2.jpg"  class="img-responsive" alt="slide"></div>
-                <div class="item  height-full"><img src="images/photos/gal/santai.jpg"  class="img-responsive" alt="slide"></div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#FoodCarousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="right carousel-control" href="#FoodCarousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-            </div>
-            <!-- RoomCarousel-->
-            <div class="caption">Food and Drinks<a href="gallery.php" class="pull-right"><i class="fa fa-edit"></i></a></div>
-        </div>
+<?php } ?>  
     </div>
-</div>
 </div>
 
 <div class="container" id="row-4">
@@ -233,91 +195,30 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 
 </div>
 
-
+<?php foreach($tampil_vidio_3->result()as $rs){?>
 <div class="col-sm-4">
 
     <div class="info-list" style="margin-top: 10px;">
 
-            <iframe src="https://www.youtube.com/embed/vq5pCJrCm2E" width="100%" height="250"></iframe>
+            <iframe src="https://www.youtube.com/embed/<?php echo $rs->link; ?>" width="100%" height="250"></iframe>
 
-            <a href="video-gubernur-jambi-h-al-haris-menerima-dua-penghargaan-abdi-bakti-tani-2021.html"><div class="fp-title-album">Gubernur Jambi H. Al Haris menerima dua penghargaan Abdi Bakti Tani 2021</div></a>
+            <a href="video-gubernur-jambi-h-al-haris-menerima-dua-penghargaan-abdi-bakti-tani-2021.html"><div class="fp-title-album"><?php echo $rs->nama; ?></div></a>
 
     </div>
 </div>
-<div class="col-sm-4">
+<?php } ?>
 
-    <div class="info-list" style="margin-top: 10px;">
 
-            <iframe src="https://www.youtube.com/embed/6ru77bteXtQ" width="100%" height="250"></iframe>
 
-            <a href="video--gubernur-al-haris-kita-harus-bijak-dalam-bermedsos.html"><div class="fp-title-album"> Gubernur Al Haris: Kita Harus bijak dalam bermedsos</div></a>
-
-    </div>
-    </div>
-
-<div class="col-sm-4">
-
-    <div class="info-list" style="margin-top: 10px;">
-
-            <iframe src="https://www.youtube.com/embed/IEE_N9MRccA" width="100%" height="250"></iframe>
-
-            <a href="video-----.html"><div class="fp-title-album">Vaksin Provinsi Jambi   </div></a>
-
-    </div>
-    </div>
-    </div>
+</div>
 <hr>
 <h2><div class="title"><hr>LINK TERKAIT</div></h2>
 <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-
+<?php foreach($tampil_data_web_terkait->result()as $rs){?>
                         
-                        <a href="http://kominfo.go.id" target="_BLANK"><img src="foto_pasangiklan/851409KOMINFO.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        
-                        <a href="http://kemendagri.go.id" target="_BLANK"><img src="foto_pasangiklan/133544kemendagri.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="https://www.setneg.go.id/" target="_BLANK"><img src="foto_pasangiklan/995492sekretariatanegra.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://www.lkpp.go.id/v3/" target="_BLANK"><img src="foto_pasangiklan/355621lkpp.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="https://ulp.lkpp.go.id/" target="_BLANK"><img src="foto_pasangiklan/38295ulp.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://lpse.jambiprov.go.id/eproc4/" target="_BLANK"><img src="foto_pasangiklan/896828lpse.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://www.bpk.go.id/" target="_BLANK"><img src="foto_pasangiklan/64973BPKRI.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="https://www.kpk.go.id/id" target="_BLANK"><img src="foto_pasangiklan/179043kpk.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="https://www.kejaksaan.go.id/" target="_BLANK"><img src="foto_pasangiklan/127600kejaksaanrepublikindonesia.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://jambiprov.go.id/v2/profil-website-kabupaten-dan-kota.html" target="_BLANK"><img src="foto_pasangiklan/229070851409KOMINFO.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://bappenas.go.id" target="_BLANK"><img src="foto_pasangiklan/63343BAPENAS.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://www.djpk.kemenkeu.go.id/" target="_BLANK"><img src="foto_pasangiklan/856384KEMENKEU.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://bps.go.id" target="_BLANK"><img src="foto_pasangiklan/235264BPS.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="http://simaya.jambiprov.go.id" target="_BLANK"><img src="foto_pasangiklan/324170simaya.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        <a href="https://sikejar.id" target="_BLANK"><img src="foto_pasangiklan/873649sikejar.jpg"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                         <a href="https://www.lapor.go.id/" target="_BLANK"><img src="foto_pasangiklan/lapor.png"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                        
-                        </marquee>
+                        <a href="<?php echo $rs->link; ?>" target="_BLANK"><img src="img/web_terkait/<?php echo $rs->gambar_web_terkait; ?>"  width="175" height="89"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<?php } ?>                        
+</marquee>
 
 
 <!-- services -->

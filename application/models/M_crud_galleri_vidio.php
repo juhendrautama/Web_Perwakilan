@@ -87,9 +87,9 @@ class M_crud_galleri_vidio extends CI_Model {
 		}
 		
 		
-		function tampil_vidio_terbaru_1(){
+		function tampil_vidio_3(){
 			
-			$sql=$this->db->query("select * FROM tbl_vidio order by id_vidio desc limit 1 ");
+			$sql=$this->db->query("select * FROM tbl_vidio order by id_vidio desc limit 3 ");
 			return $sql;
 			
 		}

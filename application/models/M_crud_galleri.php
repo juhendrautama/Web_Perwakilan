@@ -134,13 +134,25 @@ $sql=$this->db->query("SELECT * from tbl_foto inner join tbl_album on tbl_album.
 			$hasil=$this->db->query("delete from tbl_album where id_album = '$id' ");
 			return $hasil;
 		} 
+
+
 		///tampilan depana
+
+		function ambil_jumlah_slider_id($id){
+			
+			$sql=$this->db->query("select max(id_foto) as total from tbl_foto where id_album ='$id';");
+			return $sql;
+			
+		}
+
 		function tampil_semua_foto_id_allbum($id=''){
 			
 			$sql=$this->db->query("select * FROM tbl_foto where id_album ='$id';");
 			return $sql;
 			
 		}
+
+
 
 		function tampil_album_id_allbum($id=''){
 			
@@ -153,6 +165,13 @@ $sql=$this->db->query("SELECT * from tbl_foto inner join tbl_album on tbl_album.
 		function tampil_semua_foto_depan(){
 			
 			$sql=$this->db->query("select * FROM tbl_foto ;");
+			return $sql;
+			
+		}
+
+		function tampil_semua_album_3(){
+			
+			$sql=$this->db->query("select * FROM tbl_album order by  id_album desc limit 3 ");
 			return $sql;
 			
 		}

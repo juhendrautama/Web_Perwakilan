@@ -33,8 +33,8 @@ class Home extends CI_Controller {
 		$data['tampil_data_web_terkait']=$this->M_crud_web_terkait->tampil_data_web_terkait();
 		$data['tampil_berita_terbaru_4']=$this->M_crud_berita->tampil_berita_terbaru_4();
 		$data['tampil_semua_foto_depan']=$this->M_crud_galleri->tampil_semua_foto_depan();
-		$data['tampil_semua_album']=$this->M_crud_galleri->tampil_semua_album();
-
+		$data['tampil_semua_album_3']=$this->M_crud_galleri->tampil_semua_album_3();
+		$data['tampil_vidio_3']=$this->M_crud_galleri_vidio->tampil_vidio_3();
 
 		$data['tampil_data_kontak_addres']=$this->M_crud_kontak->tampil_data_kontak_addres();
 		$data['tampil_data_kontak_nomber_phone']=$this->M_crud_kontak->tampil_data_kontak_nomber_phone();
