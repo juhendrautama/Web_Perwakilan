@@ -49,11 +49,12 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 <div id="information" class="spacer reserve-info ">
 
 <div class="row">
+<?php  foreach($tampil_vidio_level_utama->result()as $rs){?>    
 <div class="col-sm-7 col-md-8">
-<h3>PROFIL PROVINSI JAMBI</h3>
-    <iframe src="https://www.youtube.com/embed/rRcAyAiqprY" width="100%" height="400"></iframe>
-    <a href="video--gubernur-al-haris-kita-harus-bijak-dalam-bermedsos.html"><div class="fp-title-album"><center> Wisata Jambi</div></a>
+<h3><?php echo $rs->nama; ?></h3>
+    <iframe src="https://www.youtube.com/embed/<?php echo $rs->link; ?>" width="100%" height="400"></iframe>
 </div>
+<?php } ?>
 <div class="col-sm-5 col-md-4"><br>
     <form role="form" class="wowload fadeInRight">
         <div class="form-group">
@@ -65,18 +66,50 @@ Alamat: Jl. Cidurian No.15-17, RT.5/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pus
 <center>
  <div class="featured-author-footer">
  Kepala Dinas Kominfo Provinsi Jambi
-         </div>
-        </div>
-        </div>
+
+</div>
+</div>
+</div>
+
 
 
 <div id="information" class="spacer reserve-info ">
 <div class="">
 <div class="row">
-<div class="col-sm-7 col-md-8"><br>
-<h3>BERITA DAERAH</h3><hr>
+<div class="col-sm-7 col-md-8">
+<hr>    
+<h3>BERITA</h3>
+<hr>
+
+<div class="row">
+    <div class="col-md-12">
+                                  <div class="row">
+                                <?php foreach($tampil_berita_terbaru_4->result()as $rs){?>
+                                      <div class="col-md-12">
+                                       <!--   -->
+                                      <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                  <img src="img/berita/<?php echo $rs->img ?>" style="width:100%; height:80%;" class="img-responsive" alt="...">
+                                                </div>
+                                                <div class="col-md-8">
+                                                  <a href="Berita/Selengkap_nya/<?php echo $rs->id_berita; ?>/<?php echo str_replace(' ','-',$rs->judul) ?>">
+                                                    <p style="font-size:15px;"><?php echo $rs->judul;  ?></p>
+                                                    </a>
+                                                    <p style="font-size:10px;">Penulis:<?php echo $rs->penulis; ?> || TGl:<?php echo $rs->tgl; ?> </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                        
+                                      </div>
+                              <?php } ?>
+    </div>
 </div>
 
+</div>
+</div>
 
 
 <div class="col-sm-5 col-md-4">

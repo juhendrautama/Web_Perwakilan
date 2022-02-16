@@ -31,10 +31,35 @@ class M_crud_galleri_vidio extends CI_Model {
 			");
 		return $sql ;	
 		}
+
+		function Simpan_data_ubah(){
+			$id_vidio=$this->db->escape_str($this->input->post('id_vidio'));
+			$nama=$this->db->escape_str($this->input->post('nama'));
+			$link=$this->db->escape_str($this->input->post('link'));
+			$tanggal=Date("d-F-Y");
+			$sql=$this->db->query("
+				UPDATE
+				`tbl_vidio`
+				SET
+				  `nama` = '$nama',
+				  `link` = '$link',
+				  `tgl` = '$tanggal'
+				WHERE `id_vidio` = '$id_vidio';
+			
+			");
+		return $sql ;	
+		}
 		
 		function tampil_semua_vidio(){
 			
 			$sql=$this->db->query("select * FROM tbl_vidio order by id_vidio desc ");
+			return $sql;
+			
+		}
+
+		function tampil_vidio_level_utama(){
+			
+			$sql=$this->db->query("select * FROM tbl_vidio where level='UTAMA' ");
 			return $sql;
 			
 		}

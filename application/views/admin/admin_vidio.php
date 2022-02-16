@@ -81,10 +81,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
-                                                                 $no=1;
-                                                                 foreach($tampil_semua_vidio->result()as $rs)
-                                                                  {?>
+                                <?php  $no=1; foreach($tampil_vidio_level_utama->result()as $rs){?>
                                     <tr class="odd gradeX">
                                         <td><?php echo $no; ?></td>
                                         <td><?php echo $rs->nama; ?></td>
@@ -94,15 +91,67 @@
                                         </td>
                                         <td ><?php echo $rs->tgl; ?></td>
                                         <td >
+                                        <center>
+<a class="btn btn-primary"  href="#" title="EDIT DATA"  data-toggle="modal" data-target="#m<?php echo $rs->id_vidio; ?>">
+    <i class="ace-icon fa fa-pencil bigger-130"></i>
+</a>
+                                            </center>
+<!-- Modal -->
+<div class="modal fade" id="m<?php echo $rs->id_vidio; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ubah Link Vidio</h4>
+      </div>
+      <form action="adminpanel/Admin_vidio/Simpan_data_ubah" method="post">
+      <div class="modal-body">
+            <input type="taxt" hidden name="id_vidio" value="<?php echo $rs->id_vidio; ?>">
+           <div class="row">
+                <div class="col-md-12">
+                    <input required class="form-control" style="width:100%;" type="text" name="nama" value="<?php echo $rs->nama; ?>" placeholder="Nama"/>
+                </div>
+            </div>
+           <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <input required class="form-control" style="width:100%;" type="text" name="link" value="<?php echo $rs->link; ?>" placeholder="Link Vidio"/>
+                </div>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" name="Submit" class="btn btn-primary">Save changes</button>
+      </div>
+      </form> 
+    </div>
+  </div>
+</div>                                            
+<!-- Modal -->
+                                   
+                                    <?php } ?>        
+                                    </tr>
+                                    <?php 
+                                    $no=1; foreach($tampil_semua_vidio->result()as $rs){ ?>
+                                    <?php if($rs->level=='UTAMA'){ }else{?>    
+
+                                    <tr class="odd gradeX">
+                                        <td><?php echo $no; ?></td>
+                                        <td><?php echo $rs->nama; ?></td>
+                                        <td >
+                            <iframe width="100%" height="170" src="https://www.youtube.com/embed/<?php echo $rs->link; ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                                        </td>
+                                        <td ><?php echo $rs->tgl; ?></td>
+                                        <td >
+                                         
                                             <center>
                                  <a class="btn btn-primary"  href="adminpanel/Admin_vidio/Hapus_data_vidio/<?php echo $rs->id_vidio; ?>" title="HAPUS DATA" ><i class="ace-icon fa fa-trash-o bigger-130"></i></a>
-                                            </center>
+                                            </center>     
                                         </td>
                                     </tr>
-                                   <?php 
-                                                        $no++;
-                                                         } 
-                                                      ?>
+                                   <?php } $no++; } ?>
                                 </tbody>
                             </table>
                             <!-- /.table-responsive -->

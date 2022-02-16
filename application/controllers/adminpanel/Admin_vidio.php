@@ -23,7 +23,8 @@ class Admin_vidio extends CI_Controller {
 	
 	public function index()
 
-	{
+	{	
+		$data['tampil_vidio_level_utama']=$this->M_crud_galleri_vidio->tampil_vidio_level_utama();
 		$data['tampil_semua_vidio']=$this->M_crud_galleri_vidio->tampil_semua_vidio();
 		$this->load->view('admin/admin_vidio',$data);
 
@@ -75,6 +76,30 @@ class Admin_vidio extends CI_Controller {
 			}
 
 	}
+
+	public function Simpan_data_ubah()
+
+	{
+
+		
+
+		if(isset($_POST['Submit'])){
+
+		$hasil=$this->M_crud_galleri_vidio->Simpan_data_ubah();
+
+		if ($hasil){ ?>
+				<script type="text/javascript">
+
+						alert('data tersimpan');window.location="<?php echo base_url() ?>adminpanel/Admin_vidio";
+					</script>
+				<?php }
+
+			}else{
+
+				redirect('Home_admin/');
+			}
+
+	}	
 
 
 	

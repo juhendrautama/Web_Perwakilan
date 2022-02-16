@@ -203,7 +203,7 @@ class M_crud_berita extends CI_Model {
 
 			function tampil_berita_terbaru_4(){
 			
-			$sql=$this->db->query("select * FROM tbl_berita order by id_berita desc limit 8 ");
+			$sql=$this->db->query("select * FROM tbl_berita order by id_berita desc limit 4 ");
 			return $sql;
 			
 		}
